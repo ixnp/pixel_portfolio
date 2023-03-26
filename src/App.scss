@@ -6,15 +6,27 @@
   justify-content: space-between;
   width: 100%;
   #cloud_right{
-    animation: 3s bounce ease-in-out infinite paused;
+    animation: 3s bounce_right ease-in-out infinite paused;
     animation-play-state: running;
   }
   #cloud_left{
-    animation: 3s bounce ease-in-out infinite paused;
+    animation: 3s bounce_left ease-in-out infinite paused;
     animation-play-state: running;
   }
 }
-@keyframes bounce {
+
+@keyframes bounce_right {
+  0%, 5%, 95%, 100% {
+      left: 0%;
+      transform: translate(2%, 0);
+  }
+  45%, 55% {
+      left: 100%;
+      transform: translate(0%, 0);
+  }
+}
+
+@keyframes bounce_left {
   0%, 5%, 95%, 100% {
       left: 0%;
       transform: translate(0%, 0);
