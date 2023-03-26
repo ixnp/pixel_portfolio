@@ -1,0 +1,26 @@
+.clouds{
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  #cloud_right{
+    animation: 3s bounce ease-in-out infinite paused;
+    animation-play-state: running;
+  }
+  #cloud_left{
+    animation: 3s bounce ease-in-out infinite paused;
+    animation-play-state: running;
+  }
+}
+@keyframes bounce {
+  0%, 5%, 95%, 100% {
+      left: 0%;
+      transform: translate(0%, 0);
+  }
+  45%, 55% {
+      left: 100%;
+      transform: translate(-2%, 0);
+  }
+}

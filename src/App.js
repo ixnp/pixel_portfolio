@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import cloud_left from "./assets/cloud_left.png"
+import cloud_right from "./assets/cloud_right.png"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div class="clouds">
+      <img alt="cloud_left" id="cloud_left" src={cloud_left}/>
+      <img alt="cloud_right" id="cloud_right"src={cloud_right}/>
+     </div>
     </div>
   );
 }
