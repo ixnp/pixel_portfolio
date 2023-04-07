@@ -8,8 +8,10 @@
   margin: 8% 8% 8% 3%;
   display: flex;
   align-items: end;
+
+  //color
+  background-color: rgba(24, 52, 119, 0.5);
   img{
-    
     transform: skew(14deg); 
   }
 }
