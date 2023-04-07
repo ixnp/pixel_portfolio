@@ -1,4 +1,5 @@
 import '../style/Container.scss';
+
 //Image assets
 import cloud_left from "../assets/cloud_left.png"
 import cloud_right from "../assets/cloud_right.png"

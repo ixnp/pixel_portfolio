@@ -6,13 +6,18 @@
   justify-content: space-between;
   overflow: hidden;
   width: 100%;
+  pointer-events: none; 
   #cloud_right{
     animation: 3s bounce_right ease-in-out infinite paused;
     animation-play-state: running;
+  
+
   }
   #cloud_left{
     animation: 3s bounce_left ease-in-out infinite paused;
     animation-play-state: running;
+ 
+
   }
 }
 
@@ -75,4 +80,9 @@
 @keyframes fade {
   0%,100% { opacity: 0 }
   50% { opacity: 1 }
+}
+
+html, body{
+     //Text
+     font-family: 'VT323', monospace;
 }
