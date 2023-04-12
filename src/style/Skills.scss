@@ -1,0 +1,38 @@
+.skills{
+    
+    width: 100%;
+    overflow-y: scroll;
+ 
+    li{
+        display: flex;
+        align-content: center;
+        margin: auto;
+        padding: auto;
+        font-size: 1rem;
+
+    }
+   
+
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+::-webkit-scrollbar-thumb {
+    background: #cf0ae9;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+
+  }
+
+.statBar, div:empty{
+    align-self: center;
+    margin-left: 2%;
+    width: 80px;
+    background-color: rgb(186, 94, 176);
+    outline: 1px solid rgb(40, 22, 2);
+    height: .5rem;
+    
+   
+}
