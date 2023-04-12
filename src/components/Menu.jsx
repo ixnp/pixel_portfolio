@@ -1,7 +1,16 @@
+import {useState} from 'react'
 function Menu({handleMenu, width}) {
+    const [menuClicked, setMenuClicked] = useState(false)
+    const [menuClass, setMenuClass] = useState('menu')
+  
+    const handleClick = () => {
+            setMenuClicked((prevMenuClicked)=> !prevMenuClicked)
+            setMenuClass((prevMenuClick)=> prevMenuClick === 'menu'?'widget':'menu')
+    }
+
     return(
-         width > 1283?
-        <ul class="menu">
+         width > 1283 || menuClicked ?
+        <ul class={menuClass} onClick={handleClick}>
            
             <li onClick={() => handleMenu("About")}>About</li>
             <li onClick={() => handleMenu("Skills")}>Skills</li>
@@ -11,7 +20,7 @@ function Menu({handleMenu, width}) {
             <li onClick={() => handleMenu("Contact")}>Contact</li>
             </ul>:
         <ul class="menu mobile">
-            <li>Menu</li>
+            <li onClick={handleClick}>Menu</li>
         </ul>
     )
 }

@@ -11,8 +11,9 @@ import MainContainer from "./MainContainer"
 
 
 function App() {
+
   return (
-    <div className="App">
+    <div  className="App">
       <MainContainer />
       <img alt="stars_layer_1" id="stars_layer_1" src={pixel_stars_1}/>
       <img alt="stars_layer_2" id="stars_layer_2" src={pixel_stars_2}/>
