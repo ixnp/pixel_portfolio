@@ -2,12 +2,12 @@
 import AboutContent from "./AboutContent"
 import Skills from "./Skills"
 
-function ContentContainer({currentPage}) {
-console.log(currentPage)
+function ContentContainer({currentPage, width}) {
+
 const  renderContent = () => {
         switch(currentPage){
             case "About":
-                return  <AboutContent/>
+                return  <AboutContent width={width}/>
             case "Skills":
                 return  <Skills/>
             case "Experience":

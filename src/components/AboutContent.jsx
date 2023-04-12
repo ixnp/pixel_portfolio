@@ -1,5 +1,6 @@
 import portrait from "../assets/portrait_8bit_x2.png"
-function AboutContent() {
+import portraitMobile from "../assets/portrait_8bit.png"
+function AboutContent({width}) {
     return(
         <>
           <img src={portrait}></img>

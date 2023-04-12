@@ -86,3 +86,11 @@ html, body{
      //Text
      font-family: 'VT323', monospace;
 }
+
+//Mobile 
+//Removes clouds on smaller screens
+@media screen and (max-width: 1283px) {
+  .clouds{
+      display: none;
+  }
+}
