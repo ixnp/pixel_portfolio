@@ -1,27 +1,28 @@
 //import portrait from "../assets/portrait_8bit_x2.png"
 import AboutContent from "./AboutContent"
 import Skills from "./Skills"
+import Experience from "./Experience"
 
 function ContentContainer({currentPage, width}) {
 
 const  renderContent = () => {
         switch(currentPage){
-            case "About":
+            case "about":
                 return  <AboutContent width={width}/>
-            case "Skills":
+            case "skills":
                 return  <Skills />
-            case "Experience":
+            case "experience":
+                return <Experience />
+            case "projects":
                 break
-            case "Projects":
+            case "videos":
                 break
-            case "Videos":
-                break
-            case "Contact":
+            case "contact":
                 break
         }
     }
     return(
-        <div class={`ContentContainer ${currentPage=="About"&& 'skew'}`}>
+        <div class={`ContentContainer ${currentPage}`}>
           {renderContent()}
         </div>
     )

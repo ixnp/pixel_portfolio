@@ -4,7 +4,7 @@
     // grid-column-start: 3;
     // grid-row-start:1;
     // grid-row-end:4;
-    width: 230px;
+    min-width: 230px;
     display: flex;
     flex-direction: column;
     align-content: space-around;
@@ -16,7 +16,7 @@
     //Text
     font-size: 2.5rem;
     margin: 0;
-    
+   
     
     //color
     background-color: rgba(24, 52, 119, 0.5);
@@ -35,7 +35,7 @@
         position: absolute;
         top:-5%;
         left:60%;
-        width: 100px;
+        min-width: 100px;
         text-justify: auto;
         font-size: 2rem;
     }

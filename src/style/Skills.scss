@@ -1,23 +1,28 @@
-.skills{
-   
+.skills-content{
     height: 100%;
     width: 100%;
     overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 0;
+
     h2{
-        transform: skew(3deg); 
         text-align: start;
         margin: 0;
     }
  
     li{
       
-        display: flex;
+        display: grid;
+        grid-template-columns: .5fr 1fr 2fr;
         align-content: center;
         margin: auto;
         padding: auto;
         margin-top: 5px;
         margin-bottom: 5px;
         font-size: 1.3rem;
+        text-align: start;
         img{
             
             margin-right:10px;
@@ -29,21 +34,45 @@
         border: solid;
         margin: 10px;
         padding: 10px;
-        max-width: 70%;
+        max-width: 100%;
         
     }
     ul:first-child{
         background-color: inherit;
         border: none;
     }
+
    #hp{
         background-color: rgb(48, 179, 39);
-        width: 70%;
+        width: 100%;
     }
     #mp{
         background-color: rgb(14, 205, 234);
-        width: 70%;
+        width: 100%;
     }
+    .info{
+        grid-column-start:1;
+        grid-column-end:-1;
+    }
+    .languages{
+        grid-column-start:1;
+        grid-column-end:7;
+    }
+    .libraries{
+        grid-column-start:7;
+        grid-column-end:-1; 
+    }
+    .paradigms{
+        grid-column-start:1;
+        grid-column-end:-1;
+        li{
+            div{
+                grid-column-end:-1;
+            }
+                       
+        }
+    }
+    
 
 }
 
@@ -62,7 +91,7 @@
 .statBar, div:empty{
     align-self: center;
     margin-left: 2%;
-    width: 80px;
+    width: 100%;
     background-color: rgb(186, 94, 176);
     outline: 1px solid rgb(40, 22, 2);
     height: .5rem;
@@ -70,3 +99,23 @@
    
 }
 
+@media screen and (max-width: 1283px) {
+    .skills-content{
+        .info{
+            grid-column-start:1;
+            grid-column-end:-1;
+        }
+        .languages{
+            grid-column-start:1;
+            grid-column-end:-1;
+        }
+        .libraries{
+            grid-column-start:1;
+            grid-column-end:-1; 
+        }
+        .paradigms{
+            grid-column-start:1;
+            grid-column-end:-1;
+        }
+    }
+}
