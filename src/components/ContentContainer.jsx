@@ -9,7 +9,7 @@ const  renderContent = () => {
             case "About":
                 return  <AboutContent width={width}/>
             case "Skills":
-                return  <Skills/>
+                return  <Skills />
             case "Experience":
                 break
             case "Projects":
@@ -21,7 +21,7 @@ const  renderContent = () => {
         }
     }
     return(
-        <div class="ContentContainer">
+        <div class={`ContentContainer ${currentPage=="About"&& 'skew'}`}>
           {renderContent()}
         </div>
     )

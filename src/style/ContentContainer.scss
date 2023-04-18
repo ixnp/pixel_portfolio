@@ -1,15 +1,14 @@
 .ContentContainer{
   //Layout
-  grid-row-start: 2;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  width: 70%;
   height: 50%;
   border: solid;
   
   margin: 8% 8% 8% 3%;
   display: flex;
   align-items: end;
-  transform: skew(-14deg); 
+  //transform: skew(-14deg); 
+
 
   //Color
   background-color: rgba(24, 52, 119, 0.5);
@@ -18,9 +17,17 @@
     //Text
    font-size: 2.5rem;
    font-weight: 400;
+   //transform: skew(14deg); 
   }
 
 
+}
+
+.skew{
+  transform: skew(-14deg); 
+  h2{
+    transform: skew(14deg); 
+  }
   img{
     transform: skew(14deg); 
   }
@@ -34,13 +41,25 @@
         justify-items:center;
         align-items: center;
         display: flex;
+        align-items: space;
         flex-direction: column-reverse;
         height: 100%;
-        //margin: 8%;
-        transform: skew(-5deg);
-        img{
-            transform: skew(5deg); 
-          }
+        width: 90%;
+       
+       
+    }
+
+    .skew{
+      
+      transform: skew(-5deg); 
+      h2{
+        transform: skew(5deg); 
+ 
+       
+      }
+      img{
+        transform: skew(5deg); 
+      }
     }
   }
 
@@ -49,22 +68,31 @@
     .ContentContainer{
         display: flex;
         text-align: center;
-        //justify-items:end;
         align-items: center;
+        justify-content: space-between;
         flex-direction: column-reverse;
         height: 100%;
+        width: 80%;
         margin: 8%;
        
-        transform: skew(-5deg);
         h2{
-            font-size: 2rem;
-            transform: skew(5deg); 
-           
+
+          font-size: 2.5rem;
         }
-        img{
-            
-            width: 100%;
-            transform: skew(5deg); 
-          }
+  
     }
+  }
+
+  @media screen and (max-width: 450px) {
+    .ContentContainer{
+      height: 60%;
+      h2{
+        font-size: 1.8rem;
+      }
+      img{
+        width: 100%;
+      } 
+      
+    }
+      
   }
