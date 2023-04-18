@@ -7,10 +7,7 @@ function Menu({handleMenu, width}) {
             setMenuClicked((prevMenuClicked)=> !prevMenuClicked)
             setMenuClass((prevMenuClick)=> prevMenuClick === 'menu'?'widget':'menu')
     }
-    console.log(width)
-    console.log("compair", width > 1283)
-    console.log("click", menuClicked)
-    console.log("class",menuClass )
+
     if(width > 1283 && menuClicked==true){
         console.log('hi')
         setMenuClicked(false)

@@ -1,19 +1,52 @@
 .skills{
+   
     height: 100%;
     width: 100%;
     overflow-y: scroll;
+    h2{
+        transform: skew(3deg); 
+        text-align: start;
+        margin: 0;
+    }
  
     li{
+      
         display: flex;
         align-content: center;
         margin: auto;
         padding: auto;
-        font-size: 1rem;
-
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 1.3rem;
+        img{
+            
+            margin-right:10px;
+        }
     }
-   
+    ul{
+      
+        background-color: rgba(24, 52, 119, 0.99);
+        border: solid;
+        margin: 10px;
+        padding: 10px;
+        max-width: 70%;
+        
+    }
+    ul:first-child{
+        background-color: inherit;
+        border: none;
+    }
+   #hp{
+        background-color: rgb(48, 179, 39);
+        width: 70%;
+    }
+    #mp{
+        background-color: rgb(14, 205, 234);
+        width: 70%;
+    }
 
 }
+
 ::-webkit-scrollbar {
     width: 5px;
   }
@@ -36,3 +69,4 @@
     
    
 }
+
