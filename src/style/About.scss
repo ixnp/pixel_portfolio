@@ -3,10 +3,11 @@
   margin: 8% 8% 8% 3%;
   transform: skew(-14deg); 
   h2{
-    //transform: skew(14deg); 
+    font-size: 1.8rem; 
   }
   img{
     transform: skew(14deg); 
+
   }
   ul{
     display: flex;
@@ -24,11 +25,17 @@
     transform: skew(-5deg); 
     h2{
       transform: skew(5deg); 
-
+      font-size: 1.8rem; 
      
     }
     img{
-      transform: skew(5deg); 
+      transform: skew(5deg);
+      min-width: 80%;
+      max-width: 80%; 
+    }
+    #portrait{
+      min-width: 280px;
+      max-width: 280px;
     }
   }
 }
@@ -39,8 +46,15 @@
 
       font-size: 1.5rem; 
     }
-    
-
+    img{
+      min-width: 70%;
+      max-width: 70%;
+    } 
+    #portrait{
+      min-width: 190px;
+      max-width: 190px;
+    }
+   
   }
 }
 
@@ -50,25 +64,23 @@
   
   .about{
       height: 60%;
-
+      
       h2{
-
         font-size: 1.5rem; 
       }
       img{
-        text-align: start;
-        min-width: 50%;
-        max-width: 50%;
+        min-width: 70%;
+        max-width: 70%;
       } 
       #portrait{
-        min-width: 200px;
-        max-width: 200px;
+        min-width: 190px;
+        max-width: 190px;
       }
 
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 681px) {
   .about{
     margin-left: 10%;
     #portrait{
@@ -77,5 +89,5 @@
     }
     
   }
-    
 }
+
