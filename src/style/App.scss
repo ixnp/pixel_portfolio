@@ -89,7 +89,7 @@ html, body{
 
 //Mobile 
 //Removes clouds on smaller screens
-@media screen and (max-width: 1283px) {
+@media screen and (max-width: 600px) {
   .clouds{
       display: none;
   }

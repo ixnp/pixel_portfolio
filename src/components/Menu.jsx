@@ -22,7 +22,6 @@ function Menu({handleMenu, width}) {
             <li onClick={() => handleMenu("about")}>About</li>
             <li onClick={() => handleMenu("skills")}>Skills</li>
             <li onClick={() => handleMenu("experience")}>Experience</li>
-            <li onClick={() => handleMenu("projects")}>Projects</li>
             <li onClick={() => handleMenu("education")}>Education</li>
             <li onClick={() => handleMenu("contact")}>Contact</li>
             </ul>:
