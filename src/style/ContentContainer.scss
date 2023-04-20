@@ -15,7 +15,7 @@
 
   h2{
     //Text
-   font-size: 2.5rem;
+   font-size: 2.2rem;
    font-weight: 400;
    //transform: skew(14deg); 
   }
@@ -23,19 +23,9 @@
 
 }
 
-.about{
-  height: 50%;
-  margin: 8% 8% 8% 3%;
-  transform: skew(-14deg); 
-  h2{
-    //transform: skew(14deg); 
-  }
-  img{
-    transform: skew(14deg); 
-  }
 
  
-}
+
 
 //Mobile
 //Medium
@@ -46,25 +36,14 @@
         align-items: center;
         display: flex;
         align-items: space;
-        flex-direction: column-reverse;
+        flex-direction: row;
         height: 100%;
         width: 90%;
        
        
     }
 
-    .about{
-      
-      transform: skew(-5deg); 
-      h2{
-        transform: skew(5deg); 
- 
-       
-      }
-      img{
-        transform: skew(5deg); 
-      }
-    }
+   
   }
 
 //small
@@ -79,10 +58,7 @@
         width: 80%;
         margin: 8%;
        
-        h2{
-
-          font-size: 2.5rem;
-        }
+      
   
     }
   }
@@ -90,12 +66,7 @@
   @media screen and (max-width: 450px) {
     .ContentContainer{
       height: 60%;
-      h2{
-        font-size: 1.8rem;
-      }
-      img{
-        width: 100%;
-      } 
+  
       
     }
       

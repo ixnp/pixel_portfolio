@@ -1,0 +1,81 @@
+.about{
+  height: 50%;
+  margin: 8% 8% 8% 3%;
+  transform: skew(-14deg); 
+  h2{
+    //transform: skew(14deg); 
+  }
+  img{
+    transform: skew(14deg); 
+  }
+  ul{
+    display: flex;
+    justify-content: space-around;
+  }
+
+ 
+}
+
+@media screen and (max-width: 1283px) {
+ 
+
+  .about{
+    
+    transform: skew(-5deg); 
+    h2{
+      transform: skew(5deg); 
+
+     
+    }
+    img{
+      transform: skew(5deg); 
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .about{
+    h2{
+
+      font-size: 1.5rem; 
+    }
+    
+
+  }
+}
+
+//small
+@media screen and (max-width: 830px) {
+  
+  
+  .about{
+      height: 60%;
+
+      h2{
+
+        font-size: 1.5rem; 
+      }
+      img{
+        text-align: start;
+        min-width: 50%;
+        max-width: 50%;
+      } 
+      #portrait{
+        min-width: 200px;
+        max-width: 200px;
+      }
+
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about{
+    margin-left: 10%;
+    #portrait{
+      min-width: 150px;
+      max-width: 150px;
+    }
+    
+  }
+    
+}
