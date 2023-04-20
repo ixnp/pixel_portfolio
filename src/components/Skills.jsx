@@ -7,6 +7,12 @@ import iconReact from "../assets/bit-react.png"
 import iconNode from "../assets/bit-node.png"
 import iconRails from "../assets/bit-rails.png"
 import iconFlask from "../assets/bit-flask.png"
+import iconFunctional from "../assets/bit-functional.png"
+import iconOpp from "../assets/bit-oop.png"
+import iconHP from "../assets/bit-hp.png"
+import iconMP from "../assets/bit-mp.png"
+
+
 
 
 function Skills() {
@@ -14,8 +20,8 @@ function Skills() {
         <div class="skills-content">
           <ul class="info">
             <h2>Ixius Procopios LV: 33</h2>
-            <li>HP:100/100 <div class="statBar" id="hp"> </div></li>
-            <li>MP:50/50 <div class="statBar" id="mp"> </div></li>
+            <li><img src={iconHP}/> :100/100 <div class="statBar" id="hp"> </div></li>
+            <li><img src={iconMP}/>:50/50 <div class="statBar" id="mp"> </div></li>
             
           </ul>
           <ul class="languages">
@@ -35,8 +41,8 @@ function Skills() {
           </ul>
           <ul class="paradigms">
             <h2>Paradigms</h2>
-            <li>Object-Oriented Programming<div class="statBar"> </div></li>
-            <li>Functional Programming<div class="statBar"> </div></li>
+            <li><img src={iconOpp}/>Object-Oriented Programming<div class="statBar"> </div></li>
+            <li><img src={iconFunctional}/>Functional Programming<div class="statBar"> </div></li>
           </ul>
         </div>
     )

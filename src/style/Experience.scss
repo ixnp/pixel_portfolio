@@ -4,14 +4,20 @@
     flex-wrap: wrap;
     flex: 2 1 auto;
     justify-content: space-around;
+    align-items: center;
+    padding: 3px;
+    margin: 3px;
     div{
         margin: 5px;
         border: solid;
     }
+    img{
+        height: 100%;
+    }
    
   
-   
 }
+
 
 .jobDescription{
     li{
