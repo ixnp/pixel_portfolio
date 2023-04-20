@@ -1,26 +1,99 @@
-.jobTitles{
-    font-size: .5rem; 
-    display: flex;
-    flex-wrap: wrap;
-    flex: 2 1 auto;
-    justify-content: space-around;
-    align-items: center;
-    padding: 3px;
-    margin: 3px;
-    div{
-        margin: 5px;
-        border: solid;
+.experience{
+    min-height: 450px;
+    max-height: 450px;
+    .jobTitles{
+ 
+        font-size: .5rem; 
+        display: flex;
+        flex-wrap: wrap;
+        flex: 2 1 auto;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1px;
+        margin: 1px;
+        div{
+            margin: 5px;
+            border: solid;
+        }
+        img{
+            height: 100%;
+        }
+    
+        .selected{
+            border-bottom:solid;
+        }
+       
+      
     }
-    img{
-        height: 100%;
+    
+    
+    .jobDescription{
+        min-height: 280px;
+        max-height: 280px;
+        overflow-y: scroll;
+        margin: 10px;
+        padding: 10px;
+        text-align: start;
+        h4{
+            font-weight: lighter;
+        }
+        p{
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+        li{
+            list-style: square;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+        
     }
-   
-  
 }
 
+@media screen and (max-width: 681px) {
+    .experience{
 
-.jobDescription{
-    li{
-        list-style: square;
+
+        .jobDescription{
+            h2{
+                font-size: 1rem;
+                
+            }
+            h4, p, li{
+                font-size: .5rem; 
+            }
+       
+
+
+            min-height: 200px;
+            max-height: 200px;
+        }
+    }
+}
+@media screen and (max-width: 470px) {
+    .experience{
+        .jobTitles{
+            margin-top: 20px;
+            img{
+                width: 50%;
+            }
+        
+        }
+
+
+        .jobDescription{
+            h2{
+                font-size: 1rem;
+                
+            }
+            h4, p, li{
+                font-size: .5rem; 
+            }
+       
+
+
+            min-height: 200px;
+            max-height: 200px;
+        }
     }
 }

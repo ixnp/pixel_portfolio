@@ -39,18 +39,19 @@ const jobs = {
 function Experience(){
   const [job, setJob] = useState('lecturer')
 
+  
     return (
         <div class="experience">
           <div class="jobTitles">
-            <img onClick={() => setJob('lecturer')} src={job=='lecturer'?imageLecturer:imageLecturerSmall}/>
+            <img class={job=='lecturer'?'selected':null} onClick={() => setJob('lecturer')} src={job=='lecturer'?imageLecturer:imageLecturerSmall}/>
             
-            <img onClick={() => setJob('instructor')} src={job=='instructor'?imageInstructor:imageInstructorSmall}/>
-            <img onClick={() => setJob('teachingAssistant')} src={job=='teachingAssistant'?imageTa:imageTaSmall}/>
-            <img onClick={() => setJob('blueprint')} src={job=='blueprint'?imageQa:imageQaSmall}/>
+            <img class={job=='instructor'?'selected':null} onClick={() => setJob('instructor')} src={job=='instructor'?imageInstructor:imageInstructorSmall}/>
+            <img  class={job=='teachingAssistant'?'selected':null} onClick={() => setJob('teachingAssistant')} src={job=='teachingAssistant'?imageTa:imageTaSmall}/>
+            <img class={job=='blueprint'?'selected':null}  onClick={() => setJob('blueprint')} src={job=='blueprint'?imageQa:imageQaSmall}/>
           </div>
           <div class="jobDescription">
             <h2>{jobs[job].title}</h2>
-            <p>{jobs[job].dates}</p>
+            <h4>{jobs[job].dates}</h4>
             <p>{jobs[job].description}</p>
             <ul>
               {jobs[job].bulletPoints.map(bullet => <li>{bullet}</li>)}
