@@ -5,14 +5,14 @@ import Menu from "./Menu"
 import ContentContainer from "./ContentContainer"
 
 function MainContainer(){
-    const [currentPage, setCurrentPage] = useState("About")
+    const [currentPage, setCurrentPage] = useState("about")
     const {height, width} = useWindowDimensions();
    
     const handleMenu = (page) => setCurrentPage(page)
     return (
         <div class="main">
             <ContentContainer currentPage={currentPage} width={width}/>
-            <Menu handleMenu={handleMenu} width={width}/>
+            <Menu handleMenu={handleMenu} width={width}  />
         </div>
     )
 }
