@@ -14,12 +14,14 @@ const [education, setEducation] = useState(0)
 
     return (
         <div class="education">
+            <h2>Education</h2>
             <div class="education-icons"> 
-                <div onClick={() => setEducation(0)}><img src={iconWgu}/></div>
-                <div onClick={() => setEducation(1)}><img src={iconItil}/></div>
-                <div onClick={() => setEducation(2)}><img src={iconComptiaA}/></div>
-                <div onClick={() => setEducation(3)}><img src={iconComptiaProject}/></div>
-                <div onClick={() => setEducation(4)}><img src={iconCodeFellows}/></div>
+
+                <div onMouseOver={() => setEducation(0)}><img src={iconWgu}/></div>
+                <div onMouseOver={() => setEducation(1)}><img src={iconItil}/></div>
+                <div onMouseOver={() => setEducation(2)}><img src={iconComptiaA}/></div>
+                <div onMouseOver={() => setEducation(3)}><img src={iconComptiaProject}/></div>
+                <div onMouseOver={() => setEducation(4)}><img src={iconCodeFellows}/></div>
             </div>
           <div class="education-content">
             <h2>{eduObjects[education].cert}</h2>
