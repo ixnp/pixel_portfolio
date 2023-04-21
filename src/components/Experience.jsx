@@ -39,7 +39,8 @@ const jobs = {
 function Experience(){
   const [job, setJob] = useState('lecturer')
 
-  
+  //TODO:Create a scroll indication 
+
     return (
         <div class="experience">
           <div class="jobTitles">

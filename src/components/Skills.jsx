@@ -26,7 +26,7 @@ function Skills() {
           </ul>
           <ul class="languages">
             <h2>Languages</h2>
-            <li><img src={iconJS}/> JavaScript<div class="statBar"  style={{backgroundColor:'#e8e809'}}> </div></li>
+            <li><img src={iconJS}/> JavaScript <div class="statBar"  style={{backgroundColor:'#e8e809'}}> 5yr </div></li>
             <li><img src={iconPython}/> Python<div class="statBar" style={{width:'60%', backgroundColor:'#03a1fc'}}> </div></li>
             <li><img src={iconC}/> C# / .NET<div class="statBar"style={{width:'50%', backgroundColor:'#07e019'}}> </div></li>
             <li><img src={iconRuby}/> Ruby<div class="statBar" style={{width:'90%', backgroundColor:'#d90f28'}}> </div></li>
