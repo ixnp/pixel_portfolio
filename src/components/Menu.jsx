@@ -23,7 +23,7 @@ function Menu({handleMenu, width}) {
             <li onClick={() => handleMenu("skills")}>Skills</li>
             <li onClick={() => handleMenu("experience")}>Experience</li>
             <li onClick={() => handleMenu("education")}>Education</li>
-            <li onClick={() => handleMenu("contact")}>Contact</li>
+
             </ul>:
         <ul class="menu mobile">
             <li onClick={handleClick}>Menu</li>
