@@ -2,6 +2,7 @@
 import AboutContent from "./AboutContent"
 import Skills from "./Skills"
 import Experience from "./Experience"
+import Education from "./Education"
 
 function ContentContainer({currentPage, width}) {
 
@@ -13,8 +14,8 @@ const  renderContent = () => {
                 return  <Skills />
             case "experience":
                 return <Experience />
-            case "projects":
-                break
+            case "education":
+                return <Education />
             case "videos":
                 break
             case "contact":
