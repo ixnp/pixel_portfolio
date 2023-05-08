@@ -5,8 +5,7 @@ import imageMail from "../assets/bit-mailx2.png"
 import imageLinkedInx2 from "../assets/bit-linkedInx2.png"
 import imageGitx2 from "../assets/bit-gitx2.png"
 import imageResume2 from "../assets/bit-resumex2.png"
-
-
+import resume from "../assets/Ixius_Procopios_Resume_april.pdf"
 function AboutContent() {
     return(
         <>
@@ -15,10 +14,12 @@ function AboutContent() {
             <h2>Ix Procopios</h2>
             <h2>Software Engineer</h2>
             <ul>
-              <li><img src={imageMail}/></li>
-              <li><img src={imageLinkedInx2}/></li>
-              <li><img src={imageGitx2}/></li>
-              <li><img src={imageResume2}/></li>
+          
+
+              <li><a href="mailto:enprocopios@gmail.com"><img src={imageMail}/></a></li>
+              <li><a href="https://www.linkedin.com/in/ix-procopios/"><img src={imageLinkedInx2}/></a></li>
+              <li><a href="https://github.com/ixnp"><img src={imageGitx2}/></a></li>
+              <li><a href={resume}><img src={imageResume2}/></a></li>
             </ul>
           </div>
         
