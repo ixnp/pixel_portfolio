@@ -16,7 +16,7 @@
     li{
       
         display: grid;
-        grid-template-columns: .5fr 1fr 2fr;
+        grid-template-columns: .5fr 1fr 2fr .5fr;
         align-content: center;
         margin: auto;
         padding: auto;
@@ -66,12 +66,7 @@
     .paradigms{
         grid-column-start:1;
         grid-column-end:-1;
-        li{
-            div{
-                grid-column-end:-1;
-            }
-                       
-        }
+        
     }
     
 

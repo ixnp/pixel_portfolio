@@ -5,7 +5,7 @@ import iconComptiaA from "../assets/bit-comptia.png"
 import iconComptiaProject from "../assets/bit-comptia-project.png"
 import iconCodeFellows from "../assets/bit-code-fellows.png"
 
-const eduObjects = [{school:"Western Governors University", cert:"Bachelor of Science in Software Development",date:"2023" }, {school:"Code Fellows", cert:"Certificate for Software Development",date:"2018"}, {school:"CompTIA", cert:"CompTIA A+",date:"2022"},  {school:"CompTIA", cert:"CompTIA Project+",date:"2022"}, {school:"CompTIA", cert:"CompTIA A+",date:"2022"},  {school:"Axelos", cert:"ITIL® Foundation Certificate in IT Service Management",date:"2022"} ]
+const eduObjects = [{school:"Western Governors University", cert:"Bachelor of Science in Software Development",date:"2023" }, {school:"Code Fellows", cert:"Certificate for Software Development",date:"2018"}, {school:"CompTIA", cert:"CompTIA A+",date:"2022"},  {school:"CompTIA", cert:"CompTIA Project+",date:"2022"},   {school:"Axelos", cert:"ITIL® Foundation Certificate in IT Service Management",date:"2022"} ]
 
 
 function Education(){
@@ -18,10 +18,10 @@ const [education, setEducation] = useState(0)
             <div class="education-icons"> 
 
                 <div onMouseOver={() => setEducation(0)}><img src={iconWgu}/></div>
-                <div onMouseOver={() => setEducation(1)}><img src={iconItil}/></div>
+                <div onMouseOver={() => setEducation(1)}><img src={iconCodeFellows}/></div>
                 <div onMouseOver={() => setEducation(2)}><img src={iconComptiaA}/></div>
                 <div onMouseOver={() => setEducation(3)}><img src={iconComptiaProject}/></div>
-                <div onMouseOver={() => setEducation(4)}><img src={iconCodeFellows}/></div>
+                <div onMouseOver={() => setEducation(4)}><img src={iconItil}/></div>
             </div>
           <div class="education-content">
             <h2>{eduObjects[education].cert}</h2>
