@@ -7,7 +7,7 @@
     .education-icons{
         display: flex;
         justify-content: space-around;
-        flex-wrap: wrap;
+     
         
         div{
             img{
@@ -25,17 +25,22 @@
 
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
     .education{
+              flex-wrap: wrap;
         h2{
-            font-size: .7rem;
+            font-size: 1.2rem;
+        }
+        h3{
+            font-size: .5rem;
         }
         .education-icons{
+            flex-wrap: wrap;
             div{
                 img{
-                    width: 70%;
+                    width: 60%;
                     &:hover{
-                        width: 80%;
+                        width: 70%;
                     }
                 }
             }

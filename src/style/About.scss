@@ -1,7 +1,7 @@
 .about{
   height: 50%;
 
-  margin: 8% 8% 8% 3%;
+  margin: 5% 5% 5% 3%;
   padding-right: 2%;
   transform: skew(-14deg); 
   h2{
@@ -18,8 +18,12 @@
     //margin: 0;
     padding: 0;
     li{
-      padding: 3px;
-      margin: 3px;
+      
+      img{
+      
+        min-width: 75%;
+        max-width: 75%;
+      } 
     }
    
   }
@@ -93,11 +97,54 @@
 @media screen and (max-width: 681px) {
   .about{
     margin-left: 10%;
+   
     #portrait{
-      min-width: 100px;
-      max-width: 100px;
+      min-width: 170px;
+      max-width: 170px;
     }
+    ul{
+      display: flex;
+  
+      justify-content: space-around;
     
+      li{
+        margin: 0;
+      padding: 0;
+        img{
+      
+          min-width: 70%;
+          max-width: 70%;
+        } 
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about{
+    margin-left: 10%;
+    h2{
+      font-size: 1.2rem;
+    }
+    #portrait{
+      min-width: 120px;
+      max-width: 120px;
+    }
+    ul{
+      display: flex;
+  
+      justify-content: space-around;
+    
+      li{
+        margin: 0;
+        padding: 0;
+        img{
+      
+          min-width: 60%;
+          max-width: 60%;
+        } 
+      }
+    }
   }
 }
 
