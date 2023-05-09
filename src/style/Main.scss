@@ -28,3 +28,14 @@
        
     }
 }
+
+
+@media screen and (max-width: 300px) {
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 70%;
+       
+    }
+}

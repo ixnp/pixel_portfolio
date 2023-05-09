@@ -24,3 +24,22 @@
   
 
 }
+
+@media screen and (max-width: 300px) {
+    .education{
+        h2{
+            font-size: .7rem;
+        }
+        .education-icons{
+            div{
+                img{
+                    width: 70%;
+                    &:hover{
+                        width: 80%;
+                    }
+                }
+            }
+        
+        }
+    }
+}
