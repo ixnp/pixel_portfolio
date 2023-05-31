@@ -5,7 +5,7 @@ import imageMail from "../assets/bit-mailx2.png"
 import imageLinkedInx2 from "../assets/bit-linkedInx2.png"
 import imageGitx2 from "../assets/bit-gitx2.png"
 import imageResume2 from "../assets/bit-resumex2.png"
-import resume from "../assets/Ixius_Procopios_Resume_april.pdf"
+import resume from "../assets/Ixius_Procopios_Resume.pdf"
 function AboutContent() {
     return(
         <>

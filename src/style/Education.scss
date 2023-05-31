@@ -1,6 +1,6 @@
 .education{
-    margin: auto;
-    padding: auto;
+    margin: 10px;
+    padding: 10px;
     h3{
         font-weight: lighter;
     }
@@ -23,6 +23,30 @@
     }
   
 
+
+    @media screen and (max-width: 400px) {
+    .education{
+              flex-wrap: wrap;
+        h2{
+            font-size: 1.2rem;
+        }
+        h3{
+            font-size: .5rem;
+        }
+        .education-icons{
+            flex-wrap: wrap;
+            div{
+                img{
+                    width: 70%;
+                    &:hover{
+                        width: 80%;
+                    }
+                }
+            }
+        
+        }
+    }
+}
 }
 
 @media screen and (max-width: 400px) {

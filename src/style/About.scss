@@ -97,10 +97,12 @@
 @media screen and (max-width: 681px) {
   .about{
     margin-left: 10%;
-   
+    h2{
+      font-size: 1.2rem;
+    }
     #portrait{
-      min-width: 170px;
-      max-width: 170px;
+      min-width: 130px;
+      max-width: 130px;
     }
     ul{
       display: flex;
@@ -109,11 +111,11 @@
     
       li{
         margin: 0;
-      padding: 0;
+       padding: 0;
         img{
       
-          min-width: 70%;
-          max-width: 70%;
+          min-width: 50%;
+          max-width: 50%;
         } 
       }
     }
@@ -140,8 +142,8 @@
         padding: 0;
         img{
       
-          min-width: 60%;
-          max-width: 60%;
+          min-width: 50%;
+          max-width: 50%;
         } 
       }
     }
