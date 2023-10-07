@@ -1,18 +1,13 @@
-import { useState } from 'react';
-import useWindowDimensions from "../hooks/useWindowDimensions"
 
-import Menu from "./Menu"
+
 import ContentContainer from "./ContentContainer"
 
-function MainContainer(){
-    const [currentPage, setCurrentPage] = useState("about")
-    const {height, width} = useWindowDimensions();
-   
-    const handleMenu = (page) => setCurrentPage(page)
+function MainContainer({width, currentPage}){
+    console.log(currentPage)
     return (
         <div class="main">
             <ContentContainer currentPage={currentPage} width={width}/>
-            <Menu handleMenu={handleMenu} width={width}  />
+        
         </div>
     )
 }
