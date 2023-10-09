@@ -1,47 +1,37 @@
-.clouds{
-  position: fixed;
-  bottom: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow: hidden;
-  width: 100%;
-  pointer-events: none; 
-  #cloud_right{
-    animation: 3s bounce_right ease-in-out infinite paused;
-    animation-play-state: running;
+html, body{
+  //Text
+  font-family: 'VT323', monospace;
+  color: white;
+}
+
+.App{
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+  margin: none;
+  padding: none;
+  //Grid layout
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+@media screen and (max-width: 400px) {
+  .App{
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
   
-
-  }
-  #cloud_left{
-    animation: 3s bounce_left ease-in-out infinite paused;
-    animation-play-state: running;
- 
-
-  }
 }
 
-@keyframes bounce_right {
-  0%, 5%, 95%, 100% {
-      left: 0%;
-      transform: translate(2%, 0);
-  }
-  45%, 55% {
-      left: 100%;
-      transform: translate(0%, 0);
-  }
+li{
+list-style: none;
+}
+.clouds{
+  display: none;
 }
 
-@keyframes bounce_left {
-  0%, 5%, 95%, 100% {
-      left: 0%;
-      transform: translate(0%, 0);
-  }
-  45%, 55% {
-      left: 100%;
-      transform: translate(-2%, 0);
-  }
-}
+
 
 //Star background layer 
 #stars_layer_1{
@@ -49,8 +39,8 @@
   top: 0;
   right: 0;
   z-index: -1;
-  width:100%; 
-  height:100%;
+  width:95vw; 
+  height:95vh;
   opacity: 1;
   animation: fade 3s infinite;
 
@@ -60,8 +50,8 @@
   top: 0;
   right: 0;
   z-index: -2;
-  width:100%; 
-  height:100%;
+  width:95vw; 
+  height:95vh;
   opacity: 1;
   animation: fade 3s infinite;
   animation-delay: 1s;
@@ -71,8 +61,8 @@
   top: 0;
   right: 0;
   z-index: -3;
-  width:100%; 
-  height:100%;
+  width:95vw; 
+  height:95vh;
   opacity: 1;
   animation: fade 3s infinite;
   animation-delay: 2s;
@@ -82,18 +72,53 @@
   50% { opacity: 1 }
 }
 
-html, body{
-     //Text
-     font-family: 'VT323', monospace;
-}
 
-//Mobile 
-//Removes clouds on smaller screens
-@media screen and (max-width: 600px) {
+
+//Desktop 
+//Adds clouds to larger screens 
+@media screen and (min-width: 43rem) {
   .clouds{
-      display: none;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+    pointer-events: none; 
+    #cloud_right{
+      animation: 3s bounce_right ease-in-out infinite paused;
+      animation-play-state: running;
+    
+  
+    }
+    #cloud_left{
+      animation: 3s bounce_left ease-in-out infinite paused;
+      animation-play-state: running;
+   
+  
+    }
   }
-}
-li{
-  list-style: none;
+  @keyframes bounce_right {
+    0%, 5%, 95%, 100% {
+        left: 0%;
+        transform: translate(2%, 0);
+    }
+    45%, 55% {
+        left: 100%;
+        transform: translate(0%, 0);
+    }
+  }
+  
+  @keyframes bounce_left {
+    0%, 5%, 95%, 100% {
+        left: 0%;
+        transform: translate(0%, 0);
+    }
+    45%, 55% {
+        left: 100%;
+        transform: translate(-2%, 0);
+    }
+  }
+  
 }

@@ -5,7 +5,7 @@ import Experience from "./Experience"
 import Education from "./Education"
 
 function ContentContainer({currentPage, width}) {
-
+console.log(currentPage)
 const  renderContent = () => {
         switch(currentPage){
             case "about":
