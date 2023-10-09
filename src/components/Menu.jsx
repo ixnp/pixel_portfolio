@@ -8,15 +8,15 @@ function Menu({handleMenu, width}) {
             setMenuClass((prevMenuClick)=> prevMenuClick === 'menu large-menu'?'menu small-menu':'menu large-menu')
     }
 
-    if(width > 1283 && menuClicked==true){
-        console.log('hi')
-        setMenuClicked(false)
-        setMenuClass('menu')
-    }
+    // if(width > 1283 && menuClicked==true){
+    //     console.log('hi')
+    //     setMenuClicked(false)
+    //     setMenuClass('menu')
+    // }
  
 
     return(
-         width > 1283 || menuClicked ?
+        menuClicked ?
         <ul class={menuClass} onClick={handleClick}>
            
             <li onClick={() => handleMenu("about")}>About</li>

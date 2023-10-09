@@ -1,12 +1,14 @@
 .skills-content{
-    height: 100%;
+
+    max-height: 100%;
     width: 100%;
     overflow-y: scroll;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    
     gap: 0;
-  
+
+    
 
     h2{
         text-align: start;
@@ -52,20 +54,18 @@
         width: 100%;
     }
     .info{
-        grid-column-start:1;
-        grid-column-end:-1;
+        grid-area: 1/1/1/6;
+
     }
     .languages{
-        grid-column-start:1;
-        grid-column-end:7;
+        grid-area: 2/1/3/6;
+      
     }
     .libraries{
-        grid-column-start:7;
-        grid-column-end:-1; 
+        grid-area: 2/6/3/11;
     }
     .paradigms{
-        grid-column-start:1;
-        grid-column-end:-1;
+        grid-area: 3/1/3/11;
         
     }
     
@@ -95,23 +95,11 @@
    
 }
 
-@media screen and (max-width: 1283px) {
+@media screen and (max-width: 500px) {
     .skills-content{
-        .info{
-            grid-column-start:1;
-            grid-column-end:-1;
-        }
-        .languages{
-            grid-column-start:1;
-            grid-column-end:-1;
-        }
-        .libraries{
-            grid-column-start:1;
-            grid-column-end:-1; 
-        }
-        .paradigms{
-            grid-column-start:1;
-            grid-column-end:-1;
-        }
+    
+        display: flex;
+        flex-direction: column;
+       
     }
 }
