@@ -24,7 +24,6 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-    //margin: 0;
     padding: 0;
     li{
       img{
@@ -41,19 +40,13 @@
  
 
   .about{
-
-    //transform: skew(-5deg); 
+ 
     h2{
-      //transform: skew(5deg); 
       font-size: 1.8rem; 
      
     }
     ul{
       width: auto;
-    }
-    img{
-      //transform: skew(5deg);
-      //width: 35%;
     }
     #portrait{
       width: 200px;
@@ -61,32 +54,12 @@
   }
 }
 
-@media screen and (max-width: 930px) {
-  .about{
-
-    h2{
-
-      //font-size: 1.5rem; 
-    }
-    ul{
- 
-    }
-    img{
-     // width: 35%;
-    } 
-    #portrait{
-      //width: 190px;
-    }
-   
-  }
-}
 
 
 
 @media screen and (max-width: 500px) {
   .about{
     height: 90%;
-
     transform: skew(0deg); 
     margin-left: 10%;
     flex-direction: column;
