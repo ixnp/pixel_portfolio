@@ -1,6 +1,4 @@
 .experience{
-    // display: flex;
-    // flex-direction: column;
     height:100%;
     .jobTitles{
  
@@ -29,8 +27,7 @@
     
     
     .jobDescription{
-        // min-height: 280px;
-        // max-height: 280px;
+        height: 65%;
         overflow-y: scroll;
         margin: 10px;
         padding: 10px;
@@ -53,27 +50,7 @@
     }
 }
 
-@media screen and (max-width: 681px) {
-    .experience{
-
-
-        .jobDescription{
-            h2{
-                font-size: 1rem;
-                
-            }
-            h4, p, li{
-                font-size: .5rem; 
-            }
-       
-
-
-            // min-height: 200px;
-            // max-height: 200px;
-        }
-    }
-}
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 500px) {
     .experience{
         .jobTitles{
             margin-top: 50px;
@@ -86,17 +63,13 @@
 
         .jobDescription{
             h2{
-                font-size: 1.2rem;
+                font-size: 1.5rem;
                 
             }
             h4, p, li{
-                font-size: .7rem; 
+                font-size: 1rem; 
             }
        
-
-
-            // min-height: 200px;
-            // max-height: 65%;
         }
     }
 }
